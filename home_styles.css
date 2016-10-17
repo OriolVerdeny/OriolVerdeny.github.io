@@ -1,0 +1,72 @@
+/*--------------------------------------------
+Home
+--------------------------------------------*/
+
+span.firstWord {
+  font-size: 140%;
+}
+
+span.largerWord {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+
+.shortbio h3 {
+  float: right;
+  width: 80%;
+  text-align: left;
+  padding-bottom: 30px;
+  text-indent: 50px;
+}
+
+.shortbio img {
+    width: 15%;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 1);
+    margin: 0 20px 20px 0;
+    transition: border 0.50s ease-in-out;
+    min-width: 120px;
+}
+
+.shortbio img:hover {
+  border: 3px solid hsl(120, 100%, 25%);
+}
+
+
+.iconsList {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+.iconsList li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 40px;
+  transition: color 0.5s ease-in-out;
+}
+.iconsList li:last-child {
+  padding-right: 0;
+}
+
+.iconsList i {
+  transition: color 0.2s ease-in-out;
+  font-size:34px;
+}
+
+.iconsList i:hover{
+  color: hsl(120, 100%, 25%);
+}
+
+.iconsList a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 900px){
+  .shortbio h3 {
+    float: none;
+    width: 100%;
+  }
+}

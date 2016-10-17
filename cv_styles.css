@@ -1,0 +1,131 @@
+/*--------------------------------------------
+CV
+--------------------------------------------*/
+
+
+div.cv {
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+.jobs tr {
+  border-left: 6px solid hsl(210, 100%, 25%);
+}
+
+.education tr {
+  border-left: 6px solid hsl(30, 100%, 25%);
+}
+
+.foreginStays tr {
+  border-left: 6px solid hsl(210, 100%, 25%);
+
+}
+
+.grants tr {
+  border-left: 6px solid hsl(120, 100%, 25%);
+
+}
+
+.projects tr {
+  border-left: 6px solid hsl(30, 100%, 25%);
+
+}
+
+.conferences tr {
+  border-left: 6px solid hsl(210, 100%, 25%);
+
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+table caption {
+    font-size: 120%;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+th, td, caption {
+  border-bottom: 1px solid rgba(210, 210, 210, 1);
+}
+
+td {
+  padding: 10px 10px 10px 10px;
+}
+
+tr:hover, tr:hover p {
+  background-color: rgba(250, 250, 250, 1);
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1){
+  width: 15%;
+  min-width: 50px;
+}
+
+table p {
+  line-height: 20px;
+}
+
+.jobs p.title, .education p.title, .projects p.title, .grants p.title, .conferences p.title {
+  font-size: 110%;
+  color: rgba(0, 0, 0, 1);
+}
+
+p.workingPlace {
+  color: rgba(75, 75, 75, 1);
+  padding-left: 10px;
+  font-size: 95%;
+}
+
+.foreginStays p.workingPlace {
+  padding-left: 0;
+  font-size: 110%;
+  color: rgba(0, 0, 0, 1);
+}
+
+p.workTitle {
+  color: rgba(75, 75, 75, 1);
+  padding-left: 10px;
+  font-size: 95%;
+}
+
+
+.projects p.financing, .projects p.leader, .grants p.financing {
+  padding-left: 10px;
+  font-size: 90%;
+  color: rgba(100, 100, 100, 1);
+}
+
+
+.conferences tfoot td {
+  text-align: right;
+  border-bottom: none;
+  font-size: 85%;
+}
+
+.conferences tfoot tr:hover, .conferences tfoot tr:hover p {
+  background-color: white;
+}
+
+
+i.fa, i.fa-file-pdf-o {
+  font-size: 26px;
+}
+
+i.fa:hover {
+  color: hsl(120, 100%, 25%);
+}
+
+div.downloadCV {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 10px;
+}

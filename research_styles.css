@@ -1,0 +1,66 @@
+/*--------------------------------------------
+Research
+--------------------------------------------*/
+
+.skills {
+  margin: 1% 0 1% 0;
+}
+
+.skills li {
+  box-sizing: padding-box;
+  font-weight: normal;
+  list-style-type: none;
+  background-color: hsl(120, 50%, 17%);
+  color: #eeeeee;
+  display: inline-block;
+  padding: 5px 8px 5px 8px;
+  margin: 2px 5px 2px 0;
+  border-radius: 5px;
+}
+
+
+.shortresearch {
+  margin-top: 2%;
+  margin-left: 7%;
+}
+
+.shortresearch p {
+  width: 55%;
+  text-align: left;
+}
+
+
+.shortresearch img {
+  float: right;
+  margin-right: 10%;
+  width: 30%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.shortresearch section {
+  border-bottom: 2px solid #aaaaaa;
+  margin-bottom: 5%;
+}
+
+
+@media screen and (max-width: 700px){
+  .shortresearch p {
+    width: 100%;
+  }
+  .shortresearch img {
+    margin-right: 0;
+    margin-left: 5%;
+    width: 40%;
+    height: auto;
+  }
+
+}
+
+
+/*https://codepen.io/nxworld/pen/ZYNOBZ*/
+
+/*http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive*/

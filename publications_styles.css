@@ -1,0 +1,46 @@
+/*--------------------------------------------
+Publications
+--------------------------------------------*/
+
+.publications {
+  margin-top: 2%;
+  margin-left: 7%;
+}
+
+.peerReviewed {
+  border-left: 6px solid hsl(210, 100%, 25%);
+}
+
+.otherPubs {
+  border-left: 6px solid hsl(120, 100%, 25%);
+}
+
+.inPrepPubs{
+  border-left: 6px solid hsl(30, 100%, 25%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+table caption {
+    font-size: 120%;
+    font-weight: 400;
+    text-align: left;
+    padding: 5px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+th, td, caption {
+  border-bottom: 1px solid rgba(210, 210, 210, 1);;
+}
+
+td {
+  padding: 10px 10px 10px 10px;
+}
+
+tr:hover {
+  background-color: rgba(250, 250, 250, 1);;
+}

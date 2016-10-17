@@ -1,0 +1,315 @@
+/*--------------------------------------------
+General styles
+
+--------------------------------------------*/
+/*http://jsfiddle.net/ZsnuZ/ sticky footer*/
+
+html, body, h1, h2, h3, h4, ul, ol, li, p, a, div, figure, footer {
+/* Reset styles */
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+
+/* Default styles */
+  font-family: "Helvetica Neue", Helvetica, sans-serif; /* Specify fallback fonts */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px; /* bottom = footer height */
+}
+
+header {
+  box-shadow: 10px 10px 5px -10px gray;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), hsl(120, 100%, 25%) ), url("images/IMG_0817.JPG");
+  background: -o-linear-gradient(to right, rgba(255, 255, 255, 1), hsl(120, 100%, 25%) ), url("images/IMG_0817.JPG");
+  background: -moz-linear-gradient(to right, rgba(255, 255, 255, 1), hsl(120, 100%, 25%) ), url("images/IMG_0817.JPG");
+  background: linear-gradient(to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.9),
+    rgba(250, 255, 250, 0.8),
+    hsla(120, 100%, 25%, 0.2)),
+    url("images/IMG_2446.JPG");
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: 0 0;
+}
+
+
+main {
+  width: 80%;
+  margin: 150px auto 40px auto;
+  max-width: 1200px;
+}
+
+footer {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+  position: absolute;
+  height: 30px;
+  right: 20px;
+  bottom: 0;
+}
+
+h1 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  padding: 10px 0 10px 40px;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: left;
+  text-shadow: 1px 2px 2px #aaaaaa;
+  background-color: transparent;
+}
+
+h2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h3 strong {
+  font-weight: 400;
+}
+
+p {
+  font-family: "Raleway", Helvetica, sans-serif;
+  color: #000;
+  line-height: 26px;
+}
+
+
+/* navigation */
+
+nav {
+  padding-bottom: 10px;
+  float: left;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+nav li {
+    float: left;
+    min-width: 120px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+nav li:first-child{
+  margin-left: 50px;
+}
+nav li a {
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-bottom: 2px solid #bbbbbb;
+    transition: border-bottom 0.5s ease-in-out;
+    background-color: transparent;
+}
+nav li a:hover:not(.active) {
+    border-bottom: 2px solid hsl(120, 100%, 25%);
+}
+
+.active {
+    border-bottom: 2px solid hsl(120, 100%, 25%);
+}
+
+
+/*--------------------------------*/
+/*http://codepen.io/anon/pen/emNjGo*/
+/*nav li:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+nav li:hover:after {
+	width: 100%;
+	background: rgba(0, 125, 0, 1);
+}*/
+/*--------------------------------*/
+
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: black url("images/menu-icon.png") center;
+    cursor:pointer;
+}
+
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(249, 249, 249, 1);
+    min-width: 120px;
+    box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* Responsive part of the navigation bar*/
+@media screen and (max-width: 700px){
+
+    main {
+      margin: 100px auto 40px auto;
+    }
+
+    header {
+        position: absolute;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        background: linear-gradient(to top,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0.8)),
+          url("images/P9251898.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 0 0;
+        border: 2px solid gray;
+        right: 5%;
+        top: 50%;
+        margin-top: 0;
+        margin-right: 20px;
+        width: 25%;
+        border-radius: 25px 0 25px 25px;
+    }
+
+    nav ul li {
+      float: none;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav li:first-child {
+      margin-left: 0;
+    }
+
+    nav li a {
+      /*padding: 5px 0 0 20px;*/
+      text-align: left;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content {
+        display:block;
+        position: relative;
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 0px;
+        min-width: 0;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .dropdown-content a {
+      text-align: left;
+      position: relative;
+      font-size: 18px;
+    }
+
+    /*http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right*/
+    #menu-icon {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      margin-top: -20px;
+      margin-left: -20px;
+      display: inline-block;
+      border: 2px solid black;
+    }
+}
+
+/*http://stackoverflow.com/questions/6019845/show-hide-div-on-click-with-css*/
+/* clearfix */
+.group::before, .group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+
+/* clearfix */
+.clearfix {
+    overflow: auto;
+}
+
+
+/* footer */
+footer a {
+  text-decoration: none;
+}

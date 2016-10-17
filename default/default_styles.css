@@ -1,0 +1,150 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a, div, figure, footer {
+/* Reset styles */
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+
+/* Default styles */
+  font-family: "Helvetica Neue", Helvetica, sans-serif; /* Specify fallback fonts */
+  background-color: transparent;
+  color: #000000;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+}
+
+main {
+  width: 50%;
+  height: 80%;
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  /*geometric sans serif*/
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
+  /*font-family: "Coming Soon", Helvetica, sans-serif;*/
+
+  padding: 10px 0 10px 0;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: left;
+  text-shadow: 1px 2px 2px #aaaaaa;
+  background-color: transparent;
+}
+
+h2 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Raleway", Helvetica, sans-serif;
+  padding: 5px 0;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: left;
+}
+
+p {
+  font-family: "Helvetica Neue";
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+  line-height: 150%;
+  margin-bottom: 5%;
+  /*text-align: justify;*/
+
+}
+
+.group {
+  width: 100%;
+  height: 125px;
+  margin: 0 auto 20px auto;
+}
+
+.col {
+  width: calc(17% - 20px);
+  height: 125px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/*DEFINE A COLOR SCHEME*/
+/*Monochromatic: same hue, vary saturation and lightness*/
+/*Analogous*/
+/*Complementary*/
+/*http://colorizer.org*/
+/*http://colorpalettes.net*/
+
+.green1 {
+  background-color: hsl(120, 100%, 35%);
+}
+
+.green2 {
+  background-color: hsl(120, 100%, 25%);
+  border: 3px solid black;
+}
+
+.green3 {
+  background-color: hsl(120, 50%, 25%);
+}
+
+.green4 {
+  background-color: hsl(120, 50%, 17%);
+}
+
+.sec1 {
+  background-color: hsl(30, 70%, 80%);
+}
+
+.sec2 {
+  /*background-color: hsl(30, 50%, 40%);*/
+  background-color: hsl(30, 100%, 25%);
+}
+
+.sec3 {
+  background-color: hsl(30, 30%, 20%);
+}
+
+.sec4 {
+  background-color: hsl(210, 30%, 20%);
+}
+
+
+.sec5 {
+  /*background-color: hsl(210, 50%, 40%);*/
+  background-color: hsl(210, 100%, 25%);
+}
+
+
+.sec6 {
+  background-color: hsl(210, 70%, 80%);
+}
+
+.terc1 {
+  background-color: hsl(300, 30%, 20%);
+}
+
+.terc2 {
+  background-color: hsl(300, 100%, 25%);
+}
+
+.terc3 {
+  background-color: hsl(300, 30%, 40%);
+}

@@ -1,0 +1,241 @@
+
+
+.description {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Projects */
+
+div.projects {
+    font-size: 0;
+}
+.projects a {
+    font-size: 16px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 8px;
+    width: calc(33% - 8px);
+    margin-right: 8px;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+/*.projects a:hover img {*/
+
+.projects figure:hover img {
+    -ms-transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transition: scale(1.10);
+    -o-transition: scale(1.10);
+    transform: scale(1.10);
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+.projects figure {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.projects img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    /* IE 6-9 */
+    border: none;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.25s ease-in-out;
+}
+div.projectDescription {
+    /*padding: 5px 15px 15px 15px;
+    text-align: center;
+    font-size: 125%;
+    background-color: white;*/
+}
+.projectDescription span {
+    color: white;
+    font-size: 125%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0 10px 5px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: auto;
+    line-height: 100%;
+}
+@media screen and (max-width: 700px) {
+    .projects a {
+        width: calc(50% - 8px);
+    }
+}
+
+/*
+click and scroll
+http://jsfiddle.net/YYPKM/3/*/
+
+
+/* ----- MODAL -------*/
+
+
+/*http://www.w3schools.com/howto/howto_css_modals.asp*/
+
+
+/*https://jsfiddle.net/0x0049/koodkcng/*/
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+}
+.modal h2, h3 {
+    background-color: transparent;
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 1000px;
+    min-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    margin-bottom: 20px;
+}
+.modal-body {
+    padding: 2px 16px;
+    color: red;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+.modal-body p {
+    text-indent: 50px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.modal-body li {
+  color: #444444;
+  line-height: 26px;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    height: 20px;
+}
+
+#myModal1 .modal-header, #myModal1 .modal-footer, #myModal1 h2{
+  background-color: hsl(210, 30%, 20%);
+  color: white;
+}
+#myModal2 .modal-header, #myModal2 .modal-footer, #myModal2 h2{
+  background-color: hsl(120, 50%, 17%);
+  color: white;
+}
+#myModal3 .modal-header, #myModal3 .modal-footer, #myModal3 h2{
+  background-color: hsl(30, 30%, 20%);
+  color: white;
+}
+#myModal4 .modal-header, #myModal4 .modal-footer, #myModal4 h2{
+  background-color: hsl(120, 50%, 17%);
+  color: white;
+}
+#myModal5 .modal-header, #myModal5 .modal-footer, #myModal5 h2{
+  background-color: hsl(30, 30%, 20%);
+  color: white;
+}
+#myModal6 .modal-header, #myModal6 .modal-footer, #myModal6 h2{
+  background-color: hsl(210, 30%, 20%);
+  color: white;
+}
