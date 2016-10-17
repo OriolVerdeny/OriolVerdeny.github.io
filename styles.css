@@ -36,15 +36,14 @@ header {
   z-index: 50;
 
   background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), hsl(120, 100%, 25%) ), url("images/IMG_0817.JPG");
-  background: -o-linear-gradient(to right, rgba(255, 255, 255, 1), hsl(120, 100%, 25%) ), url("images/IMG_0817.JPG");
-  background: -moz-linear-gradient(to right, rgba(255, 255, 255, 1), hsl(120, 100%, 25%) ), url("images/IMG_0817.JPG");
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), transparent ), url("images/Nav_background slim.jpg");
+  background: -o-linear-gradient(to right, rgba(255, 255, 255, 1), transparent ), url("images/Nav_background slim.jpg");
   background: linear-gradient(to right,
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0.9),
-    rgba(250, 255, 250, 0.8),
-    hsla(120, 100%, 25%, 0.2)),
-    url("images/Nav_background.jpg");
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.7)),
+    url("images/Nav_background slim.jpg");
 
   background-repeat: no-repeat;
   background-size: 100% auto;
